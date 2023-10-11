@@ -1,0 +1,142 @@
+body{
+    background-color: black;
+    font-family: 'Mountains of Christmas', serif;
+    margin: 0;
+    color: white;
+}
+h1{
+    color: yellow;
+}
+header h1{
+    align-items: center;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 4em;
+    text-align: center;
+    
+}
+header{
+    height: 400px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-image: url(images/baniere2.jpeg) ;
+    background-size: cover;
+    background-position: center;
+}
+.intro{
+    
+    justify-content: center;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.introContent{
+    display: flex;
+    width: 0.1;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+.introText{
+    text-align: right;
+}
+.intro img{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 5px;
+    border: solid white 1px;
+    
+}
+header h1:hover{
+    text-shadow: white 5px 5px;
+}
+.endroit{
+    padding-bottom: 25px;
+    padding-top: 25px;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+.endroit iframe{
+    width: 50%;
+    height: 250px;
+    border-radius: 5px;
+    margin-left: 25%;
+}
+.galerie{
+    display: flex;
+    flex-direction: column;
+    padding-left: 15%;
+    padding-right: 15%;
+    gap: 25px;
+}
+.galerie img{
+    
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    max-height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+    justify-content: center;
+    border: solid 1px white;
+}
+main h1{
+    font-weight: 700;
+    color: white;
+}
+.photoLigne1, .photoLigne2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px;
+    gap: 25px;
+}
+.endroit p{
+    color: white;
+}
+.contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+footer{
+    height: 25px;
+}
+.nomprenom, .email{
+    width: 50%;
+}
+input, textarea{
+    border-radius: 5px;
+}
+.bouton{
+    margin-left: 50%;
+    width: 50%;
+    margin-top: 25px;
+}
+@media screen and (max-width: 996px) {
+    .photoLigne1, .photoLigne2{
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-items: center;
+    } 
+    header h1{
+        font-size: 2em;
+    }
+    .introContent{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .endroit iframe{
+        height: auto;
+    }
+    
+}
