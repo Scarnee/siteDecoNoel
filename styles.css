@@ -1,6 +1,6 @@
 body{
     background-color: black;
-    font-family: 'Mountains of Christmas', serif;
+    font-family: 'Pacifico', cursive;
     margin: 0;
     color: white;
 }
@@ -13,10 +13,19 @@ h1{
         
     }
     2%, 48%, 52%, 100%{
-        text-shadow: yellow 0 0 15px;
+        text-shadow: yellow 0 0 25px;
     }
     
     
+}
+@keyframes flicker2{
+    0%{
+        text-shadow: none;
+        
+    }
+    100%{
+        text-shadow: white 0 0 12px;
+    }
 }
 header h1{
     align-items: center;
@@ -28,6 +37,7 @@ header h1{
     font-size: 4em;
     text-align: center;
     animation: flicker 1.2s infinite alternate;
+    font-family: 'Tilt Neon', sans-serif;
     
 }
 header{
@@ -97,8 +107,12 @@ header h1:hover{
     border: solid 1px white;
 }
 main h1{
-    font-weight: 700;
+    font-size: 2em;
+    font-weight: 400;
     color: white;
+    animation: flicker2 0.5s infinite alternate;
+    font-family: 'Tilt Neon', sans-serif;
+    text-align: center;
 }
 .photoLigne1, .photoLigne2{
     display: grid;
@@ -137,7 +151,7 @@ input, textarea{
     background-color: black;
     border: solid 1px white;
     color: white;
-    font-family: 'Mountains of Christmas', serif;
+    font-family: 'Pacifico', cursive;
 }
 .bouton:hover{
     background-color: white;
