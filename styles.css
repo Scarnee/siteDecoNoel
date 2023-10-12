@@ -7,6 +7,17 @@ body{
 h1{
     color: yellow;
 }
+@keyframes flicker{
+    0%,50%{
+        text-shadow: none;
+        
+    }
+    2%, 48%, 52%, 100%{
+        text-shadow: yellow 0 0 15px;
+    }
+    
+    
+}
 header h1{
     align-items: center;
     display: flex;
@@ -16,6 +27,7 @@ header h1{
     margin: auto;
     font-size: 4em;
     text-align: center;
+    animation: flicker 1.2s infinite alternate;
     
 }
 header{
@@ -24,7 +36,7 @@ header{
     padding-bottom: 50px;
     background-image: url(images/baniere2.jpeg) ;
     background-size: cover;
-    background-position: center;
+    background-position: center;   
 }
 .intro{
     
@@ -41,17 +53,18 @@ header{
     gap: 15px;
 }
 .introText{
-    text-align: right;
+    text-align: left;
+    font-size: 1.5em;
 }
 .intro img{
-    max-width: 300px;
-    max-height: 300px;
+    max-width: 500px;
+    max-height: 500px;
     border-radius: 5px;
     border: solid white 1px;
     
 }
 header h1:hover{
-    text-shadow: white 5px 5px;
+    text-shadow: yellow 0 0 20px;
 }
 .endroit{
     padding-bottom: 25px;
@@ -100,6 +113,7 @@ main h1{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
 }
 .contact{
     padding-left: 15%;
@@ -110,19 +124,32 @@ main h1{
 footer{
     height: 25px;
 }
-.nomprenom, .email{
-    width: 50%;
+.nomprenom, .email, textarea{
+    width: 80%;
 }
 input, textarea{
     border-radius: 5px;
 }
 .bouton{
-    margin-left: 50%;
-    width: 50%;
+    
+    width: 25%;
     margin-top: 25px;
+    background-color: black;
+    border: solid 1px white;
+    color: white;
+    font-family: 'Mountains of Christmas', serif;
+}
+.bouton:hover{
+    background-color: white;
+    color: black;
+}
+.bouton:active{
+    background-color: black;
+    color: white;
+    box-shadow: white 0px 0px 1px 1px;
 }
 @media screen and (max-width: 996px) {
-    .photoLigne1, .photoLigne2{
+    .photoLigne1, .photoLigne2, .maison{
         grid-template-columns: 1fr;
         align-items: center;
         justify-items: center;
@@ -138,5 +165,16 @@ input, textarea{
     .endroit iframe{
         height: auto;
     }
+    .intro  img{
+        height: 250px;
+        width: 250px;
+    }
     
+}
+.galerie h1:hover{
+    text-decoration: none;
+    text-shadow: white 0 0 20px ;
+}
+.galerie h1:active{
+    text-decoration: none;
 }
